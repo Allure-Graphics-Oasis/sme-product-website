@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
 <url>
 <loc>https://www.dawacoffeemachienesandaccessories.com/</loc>
 <changefreq>daily</changefreq>
@@ -10,22 +16,74 @@
 <changefreq>monthly</changefreq><priority>0.5</priority>
 </url>
 <url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd77af3f4ef52df7c4c653</loc>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd77af3f4ef52df7c4c653</loc>
 <lastmod>2025-09-07T10:58:23.202Z</lastmod>
-<changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd789f3f4ef52df7c4c677</loc><lastmod>2025-09-07T11:03:56.227Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd76933f4ef52df7c4c63f</loc><lastmod>2025-09-07T12:12:41.816Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd75fa3f4ef52df7c4c62a</loc><lastmod>2025-09-07T10:54:57.127Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd75053f4ef52df7c4c619</loc><lastmod>2025-09-07T03:21:18.304Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd75053f4ef52df7c4c619</loc><lastmod>2025-09-07T10:57:25.457Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd74353f4ef52df7c4c60a</loc><lastmod>2025-09-07T03:32:27.456Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd6f4256d1117c44d0a072</loc><lastmod>2025-09-07T10:54:10.318Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd6e3d56d1117c44d0a05a</loc><lastmod>2025-09-07T03:38:03.617Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bd6d7556d1117c44d0a048</loc><lastmod>2025-09-07T11:33:09.317Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bcfccb53d4870c3d6198e4</loc><lastmod>2025-09-07T11:37:08.549Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bcfd3053d4870c3d6198fe</loc><lastmod>2025-09-07T11:40:50.234Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bcfe1b53d4870c3d619916</loc><lastmod>2025-09-07T12:01:57.974Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bcfa2e53d4870c3d6198aa</loc><lastmod>2025-09-07T12:05:25.318Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bcf8cc53d4870c3d619898</loc><lastmod>2025-09-07T19:34:50.196Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bcf7de53d4870c3d619886</loc><lastmod>2025-09-07T12:12:03.546Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68bcf6d653d4870c3d61987a</loc><lastmod>2025-09-07T12:16:47.489Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-<loc>https://www.dawacoffeemachienesandaccessories.com/product/68ba7bb59ac6f4c7d85149f8</loc><lastmod>2025-09-07T18:56:47.453Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url></urlset>
+<changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd789f3f4ef52df7c4c677</loc><lastmod
+        >2025-09-07T11:03:56.227Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd76933f4ef52df7c4c63f</loc><lastmod
+        >2025-09-07T12:12:41.816Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd75fa3f4ef52df7c4c62a</loc><lastmod
+        >2025-09-07T10:54:57.127Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd75053f4ef52df7c4c619</loc><lastmod
+        >2025-09-07T03:21:18.304Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd75053f4ef52df7c4c619</loc><lastmod
+        >2025-09-07T10:57:25.457Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd74353f4ef52df7c4c60a</loc><lastmod
+        >2025-09-07T03:32:27.456Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd6f4256d1117c44d0a072</loc><lastmod
+        >2025-09-07T10:54:10.318Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd6e3d56d1117c44d0a05a</loc><lastmod
+        >2025-09-07T03:38:03.617Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bd6d7556d1117c44d0a048</loc><lastmod
+        >2025-09-07T11:33:09.317Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bcfccb53d4870c3d6198e4</loc><lastmod
+        >2025-09-07T11:37:08.549Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bcfd3053d4870c3d6198fe</loc><lastmod
+        >2025-09-07T11:40:50.234Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bcfe1b53d4870c3d619916</loc><lastmod
+        >2025-09-07T12:01:57.974Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bcfa2e53d4870c3d6198aa</loc><lastmod
+        >2025-09-07T12:05:25.318Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bcf8cc53d4870c3d619898</loc><lastmod
+        >2025-09-07T19:34:50.196Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bcf7de53d4870c3d619886</loc><lastmod
+        >2025-09-07T12:12:03.546Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68bcf6d653d4870c3d61987a</loc><lastmod
+        >2025-09-07T12:16:47.489Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url><url>
+<loc
+        >https://www.dawacoffeemachienesandaccessories.com/product/68ba7bb59ac6f4c7d85149f8</loc><lastmod
+        >2025-09-07T18:56:47.453Z</lastmod><changefreq
+        >weekly</changefreq><priority>0.8</priority></url></urlset>

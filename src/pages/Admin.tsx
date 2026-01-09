@@ -320,7 +320,7 @@ const Admin = () => {
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>
-						<Button onClick={doLogin} className="w-full">{isLoggingIn ? "please wait..." : "Login"}</Button>
+						<Button onClick={doLogin} className={isLoggingIn ? "w-full bg-red-200" : "w-full"}>{isLoggingIn ? "please wait..." : "Login"}</Button>
 						<p className="text-xs text-muted-foreground">Use admin or merchant credentials</p>
 					</CardContent>
 				</Card>
