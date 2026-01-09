@@ -1,7 +1,5 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
   "headers": [
     {
       "source": "/(.*).xml",
@@ -19,5 +17,6 @@
           "value": "public, s-maxage=0, max-age=0, must-revalidate"
         }
       ]
-    }]
+    }
+  ]
 }

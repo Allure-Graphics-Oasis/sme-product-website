@@ -23,14 +23,13 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img 
-                src={logo} 
-                alt="CA Logo" 
+              <img
+                src={logo}
+                alt="CA Logo"
                 className="ml-2 h-8 w-auto object-contain"
               />
             </Link>
           </div>
-          
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -55,9 +54,9 @@ const Navbar = () => {
                 </a>
               </Button>
               <Button variant="secondary" size="sm" asChild>
-                <a 
-                  href="https://wa.me/+254114100019" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/+254114100019"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
                 >
@@ -76,7 +75,11 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="p-2"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -102,15 +105,18 @@ const Navbar = () => {
             ))}
             <div className="flex flex-col space-y-2 px-3 pt-2">
               <Button variant="ghost" size="sm" asChild>
-                <a href="tel:+254114100019" className="flex items-center justify-center">
+                <a
+                  href="tel:+254114100019"
+                  className="flex items-center justify-center"
+                >
                   <Phone className="h-4 w-4 mr-2" />
                   Call Us
                 </a>
               </Button>
               <Button variant="secondary" size="sm" asChild>
-                <a 
-                  href="https://wa.me/+254114100019" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/+254114100019"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center"
                 >
