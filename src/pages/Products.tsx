@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import ProductCard from "@/components/ProductCard";
 import { apiClient } from "@/lib/api";
 import { Search, Filter } from "lucide-react";
@@ -21,12 +27,15 @@ const Products = () => {
         setLoading(true);
         const data = await apiClient.getProducts();
         setProducts(data);
-        
+
         // Get unique categories
-        const uniqueCategories = ["All", ...new Set(data.map(p => p.category))];
+        const uniqueCategories = [
+          "All",
+          ...new Set(data.map((p) => p.category)),
+        ];
         setCategories(uniqueCategories);
       } catch (error) {
-        console.error('Failed to fetch products:', error);
+        console.error("Failed to fetch products:", error);
       } finally {
         setLoading(false);
       }
@@ -36,11 +45,14 @@ const Products = () => {
   }, []);
 
   const filteredProducts = products.filter((product) => {
-    const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         product.description.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === "All" || product.category === selectedCategory;
-    const matchesCondition = selectedCondition === "All" || product.condition === selectedCondition;
-    
+    const matchesSearch =
+      product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesCategory =
+      selectedCategory === "All" || product.category === selectedCategory;
+    const matchesCondition =
+      selectedCondition === "All" || product.condition === selectedCondition;
+
     return matchesSearch && matchesCategory && matchesCondition;
   });
 
@@ -53,7 +65,7 @@ const Products = () => {
             Our Product Catalog
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Browse our extensive collection of Quality reusable equipment
+            Browse our extensive collection of Quality coffee machines
           </p>
         </div>
       </div>
@@ -77,12 +89,15 @@ const Products = () => {
                 />
               </div>
             </div>
-            
+
             <div className="w-full lg:w-48">
               <label className="block text-sm font-medium text-foreground mb-2">
                 Category
               </label>
-              <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+              <Select
+                value={selectedCategory}
+                onValueChange={setSelectedCategory}
+              >
                 <SelectTrigger>
                   <SelectValue placeholder="Select category" />
                 </SelectTrigger>
@@ -95,12 +110,15 @@ const Products = () => {
                 </SelectContent>
               </Select>
             </div>
-            
+
             <div className="w-full lg:w-48">
               <label className="block text-sm font-medium text-foreground mb-2">
                 Condition
               </label>
-              <Select value={selectedCondition} onValueChange={setSelectedCondition}>
+              <Select
+                value={selectedCondition}
+                onValueChange={setSelectedCondition}
+              >
                 <SelectTrigger>
                   <SelectValue placeholder="Select condition" />
                 </SelectTrigger>
@@ -112,8 +130,8 @@ const Products = () => {
                 </SelectContent>
               </Select>
             </div>
-            
-            <Button 
+
+            <Button
               variant="outline"
               onClick={() => {
                 setSearchTerm("");
@@ -137,7 +155,9 @@ const Products = () => {
         {/* Product Grid */}
         {loading ? (
           <div className="text-center py-12">
-            <div className="text-muted-foreground text-lg">Loading products...</div>
+            <div className="text-muted-foreground text-lg">
+              Loading products...
+            </div>
           </div>
         ) : filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -151,11 +171,11 @@ const Products = () => {
               <div className="text-muted-foreground text-lg mb-4">
                 No products found matching your criteria
               </div>
-              <Button 
+              <Button
                 variant="outline"
                 onClick={() => {
                   setSearchTerm("");
-                  setSelectedCategory("All"); 
+                  setSelectedCategory("All");
                   setSelectedCondition("All");
                 }}
               >
