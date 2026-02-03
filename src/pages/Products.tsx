@@ -172,7 +172,7 @@ const Products = () => {
             </div>;
           })
         ) : (
-          <div className="text-center py-12 opacity-50 bg-[url(https://www.dawacoffeemachienesandaccessories.com/favicon.ico)] bg-no-repeat">
+          <div className="text-center py-12 bg-[url(../../public/coffee-kenya.png)] bg-no-repeat bg-fit bg-center">
             <div className="max-w-md mx-auto flex flex-col">
               <div className="text-muted-foreground text-lg mb-4 text-center z-0 items-center ">
                 <p>no product matches your criteria</p>
