@@ -9,6 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import ProductCard from "@/components/ProductCard";
+import { sampleProducts } from "../data/products.ts";
 import { apiClient } from "@/lib/api";
 import { Search, Filter } from "lucide-react";
 import type { Product } from "@/components/ProductCard";
@@ -43,6 +44,7 @@ const Products = () => {
 
     fetchProducts();
   }, []);
+  const loadingProducts = [" ", " ", " "];
 
   const filteredProducts = products.filter((product) => {
     const matchesSearch =
@@ -147,18 +149,22 @@ const Products = () => {
 
         {/* Results Count */}
         <div className="mb-6">
-          <p className="text-muted-foreground">
-            Showing {filteredProducts.length} of {products.length} products
-          </p>
+          {loading ? (
+            <p>getting products, please wait...</p>
+          ) : (
+            <p className="text-muted-foreground">
+              Showing {filteredProducts.length} of {products.length} products
+            </p>
+          )}
         </div>
 
         {/* Product Grid */}
         {loading ? (
-          <div className="text-center py-12">
-            <div className="text-muted-foreground text-lg">
-              Loading products...
-            </div>
-          </div>
+          sampleProducts.map((prod) => {
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <ProductCard key={prod._id || prod.id} product={prod} />;
+            </div>;
+          })
         ) : filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredProducts.map((product) => (
@@ -166,23 +172,28 @@ const Products = () => {
             ))}
           </div>
         ) : (
-          <div className="text-center py-12">
-            <div className="max-w-md mx-auto">
-              <div className="text-muted-foreground text-lg mb-4">
-                No products found matching your criteria
-              </div>
-              <Button
-                variant="outline"
-                onClick={() => {
-                  setSearchTerm("");
-                  setSelectedCategory("All");
-                  setSelectedCondition("All");
-                }}
-              >
-                Clear Filters
-              </Button>
-            </div>
-          </div>
+          sampleProducts.map((product) => {
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <ProductCard key={product._id || product.id} product={product} />;
+            </div>;
+          })
+          // <div className="text-center py-12">
+          //   <div className="max-w-md mx-auto">
+          //     <div className="text-muted-foreground text-lg mb-4">
+          //       No products found matching your criteria
+          //     </div>
+          //     <Button
+          //       variant="outline"
+          //       onClick={() => {
+          //         setSearchTerm("");
+          //         setSelectedCategory("All");
+          //         setSelectedCondition("All");
+          //       }}
+          //     >
+          //       Clear Filters
+          //     </Button>
+          //   </div>
+          // </div>
         )}
       </div>
     </div>
