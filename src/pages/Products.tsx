@@ -160,26 +160,26 @@ const Products = () => {
 
         {/* Product Grid */}
         {loading ? (
-          sampleProducts.map((item) => {
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              <ProductCard key={item._id || item.id} product={item} />;
-            </div>;
-          })
+          <div className="text-center py-12 bg-[url(../../public/coffee-kenya.png)]">
+            <div className="text-muted-foreground text-lg">
+              Loading products...
+            </div>
+          </div>
         ) : filteredProducts.length > 0 ? (
-          filteredProducts.map((product) => {
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              <ProductCard key={product._id || product.id} product={product} />;
-            </div>;
-          })
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredProducts.map((product) => (
+              <ProductCard key={product._id || product.id} product={product} />
+            ))}
+          </div>
         ) : (
-          <div className="text-center py-12 bg-[url(../../public/coffee-kenya.png)] bg-no-repeat bg-fit bg-center">
-            <div className="max-w-md mx-auto flex flex-col">
-              <div className="text-muted-foreground text-lg mb-4 text-center z-0 items-center ">
-                <p>no product matches your criteria</p>
+          <div className="text-center py-12 bg-[url('../../public/coffee-kenya.png')] bg-fit bg-center bg-no-repeat">
+            <div className="max-w-md mx-auto">
+              <div className="text-muted-foreground text-lg mb-4">
+                No products found matching your criteria
               </div>
               <Button
                 variant="outline"
-                className="bg-transparent text-green-700 font-black text-lg hover:bg-white"
+                className="bg-transparent text-green-500 font-semibold"
                 onClick={() => {
                   setSearchTerm("");
                   setSelectedCategory("All");
